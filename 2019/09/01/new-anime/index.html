@@ -193,6 +193,17 @@
         
         
         
+        <span class="top-comment" title="轉跳至評論區">
+            <a href="#comments">
+                評論:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
     </div>
     
     <div class="toc-ref">
@@ -246,6 +257,23 @@
     </p>
 </div>
 
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'https://terrychen.tw/2019/09/01/new-anime/', // 可选。默认为 location.href
+        owner: 'seterrychen',
+        repo: 'seterrychen.github.io',
+        oauth: {
+            client_id: '',
+            client_secret: '',
+        },
+    })
+    gitment.render('comments')
+</script>
 
 
 

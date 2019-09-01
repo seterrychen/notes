@@ -188,6 +188,23 @@
         </article>
         
         
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'https://terrychen.tw/', // 可选。默认为 location.href
+        owner: 'seterrychen',
+        repo: 'seterrychen.github.io',
+        oauth: {
+            client_id: '',
+            client_secret: '',
+        },
+    })
+    gitment.render('comments')
+</script>
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2016-2019 Kazuma</p>
