@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>JustAnimeFan</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://terrychen.tw/"/>
+  <updated>2019-09-01T10:40:27.000Z</updated>
+  <id>https://terrychen.tw/</id>
+  
+  <author>
+    <name>Kazuma</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新番查詢方式整理</title>
+    <link href="https://terrychen.tw/2019/09/01/new-anime/"/>
+    <id>https://terrychen.tw/2019/09/01/new-anime/</id>
+    <published>2019-09-01T07:45:55.000Z</published>
+    <updated>2019-09-01T10:40:27.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;以下就以自己的經驗跟大家做簡短分享，可以透過哪些網站來知道當季的新番資料&lt;/p&gt;
+&lt;h2 id=&quot;アニメ新番組-一覧-日文&quot;&gt;&lt;a href=&quot;#アニメ新番組-一覧-日文&quot; class=&quot;headerlink&quot; title=&quot;アニメ新番組 一覧(日文)&quot;&gt;&lt;/a&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="anime" scheme="https://terrychen.tw/tags/anime/"/>
+    
+  </entry>
+  
+</feed>
