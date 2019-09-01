@@ -34,12 +34,14 @@
 <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
 
 
+<script id="dsq-count-scr" src="//JustAnimeFan.disqus.com/count.js" async></script>
+
 
 <script src="/js/iconfont.js?v=1.0.1"></script>
 
 </head>
 <div style="display: none">
-  <input class="theme_disqus_on" value="false">
+  <input class="theme_disqus_on" value="true">
   <input class="theme_preload_comment" value="false">
   <input class="theme_blog_path" value>
 </div>
@@ -188,22 +190,55 @@
         </article>
         
         
-    <div id="comments"></div>
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="/js/gitment.js"></script>
-<script>
-    var gitment = new Gitment({
-        id: 'https://terrychen.tw/', // 可选。默认为 location.href
-        owner: 'seterrychen',
-        repo: 'seterrychen.github.io',
-        oauth: {
-            client_id: '',
-            client_secret: '',
-        },
-    })
-    gitment.render('comments')
-</script>
+    <section id="comments" class="disqus">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function(){
+            this.page.url = 'https://terrychen.tw/';
+            this.page.identifier = 'tags/anime/index.html';
+        };
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = '//JustAnimeFan.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <aside class="comment-bar">
+        <a href="javascript:void(0);">
+            <i class="fa fa-commenting-o animated infinite pulse"></i>
+            <i class="fa fa-spinner fa-pulse"></i>
+            <span class="count-comment"></span>
+        </a>
+    </aside>
+    <script>
+        var isLoadComments = false;
+        var $commentBar = $("#comments aside.comment-bar");
+        var load$hide = function(){
+            if(isLoadComments){
+                return;
+            }
+            isLoadComments = true;
+            if(isLoadComments )
+            $commentBar.find("a > i").toggle();
+            loadComment();
+            $commentBar.fadeOut(800);
+        }
+        $commentBar.click(function(){
+            load$hide();
+        })
+        $commentBar.children("a").mouseenter(function(){
+            load$hide();
+        })
+    </script>
 
+</section>
+
+<!-- Add comment count-->
+<span class="disqus-comment-count" style="display: none" data-disqus-identifier="tags/anime/index.html"></span>
+<span class="disqus-comment-count" style="display: none" data-disqus-url=""></span>
 
     </div>
     <div class="copyright">
